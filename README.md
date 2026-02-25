@@ -1,17 +1,19 @@
 <div align="center">
 
-```
+<pre>
    ██████╗ ██╗  ██╗      ███╗   ███╗ ██████╗ ██████╗ 
   ██╔════╝ ╚██╗██╔╝      ████╗ ████║██╔═══██╗██╔══██╗
   ██║  ███╗ ╚███╔╝  ████╗██╔████╔██║██║   ██║██║  ██║
   ██║   ██║ ██╔██╗  ╚═══╝██║╚██╔╝██║██║   ██║██║  ██║
   ╚██████╔╝██╔╝ ██╗      ██║ ╚═╝ ██║╚██████╔╝██████╔╝
    ╚═════╝ ╚═╝  ╚═╝      ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ 
-```
+</pre>
 
 **Gaming Server Optimization Framework**
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Banner](https://raw.githubusercontent.com/Dnt3e/Gx-Mod/refs/heads/main/Gx-Mod.png)
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22%2B-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-5.0+-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-1.0.0-cyan?style=flat-square)
@@ -27,9 +29,11 @@
 
 ## 🇮🇷 فارسی
 
+<div dir="rtl">
+
 ### Gx-Mod چیست؟
 
-Gx-Mod یک فریمورک بهینه‌سازی سرور گیمینگ برای اوبونتو ۲۲.۰۴ هست که با یک اسکریپت bash سروری رو به صورت هوشمند تنظیم می‌کنه — از یه VPS ارزون ۱ گیگی تا یه سرور ددیکیت قدرتمند.
+Gx-Mod یک فریمورک بهینه‌سازی سرور گیمینگ برای اوبونتو نسخه ۲۲ به بالا هست که با یک اسکریپت bash سروری رو به صورت هوشمند تنظیم می‌کنه — از یه VPS ارزون ۱ گیگی تا یه سرور ددیکیت قدرتمند.
 
 هدفش اینه که **تاخیر** کمتر بشه، **جیتر** پایین بیاد، و **پهنای باند** پایدار بمونه. بدون وعده‌های توخالی، بدون تنظیمات خطرناک.
 
@@ -37,11 +41,11 @@ Gx-Mod یک فریمورک بهینه‌سازی سرور گیمینگ برای 
 
 ### ✨ قابلیت‌ها
 
-- **شناسایی خودکار سخت‌افزار** — RAM، هسته CPU، نوع دیسک (NVMe/SSD/HDD)، نوع مجازی‌سازی (KVM، OpenVZ و...)
+- **شناسایی خودکار سخت‌افزار** — مقدار RAM، تعداد هسته CPU، نوع دیسک (NVMe/SSD/HDD)، نوع مجازی‌سازی (KVM، OpenVZ و...)
 - **تشخیص RTT** — چند تست ping به سرورهای مختلف می‌زنه و میانگین تاخیر رو حساب می‌کنه
 - **۴ حالت بهینه‌سازی** — از حالت خودکار تا تنظیمات تخصصی برای ایران و بازی‌های رقابتی
 - **بنچمارک قبل و بعد** — نتایج واقعی رو نشون می‌ده، نه اعداد ساختگی
-- **پشتیبان‌گیری و بازیابی کامل** — قبل از هر تغییری backup می‌گیره، با یه دستور برمی‌گرده
+- **پشتیبان‌گیری و بازیابی کامل** — قبل از هر تغییری بکاپ می‌گیره، با یه دستور برمی‌گرده
 - **سرویس systemd** — بعد از ریبوت سرور، تنظیمات خودکار اعمال می‌شن
 - **رابط رنگی و تمیز** — منوی ساده با رنگ‌بندی واضح در ترمینال
 
@@ -49,26 +53,30 @@ Gx-Mod یک فریمورک بهینه‌سازی سرور گیمینگ برای 
 
 ### 🚀 نصب سریع
 
+</div>
+
 ```bash
-wget -O gx-mod.sh https://raw.githubusercontent.com/D3nte/gx-mod/main/gx-mod.sh
-chmod +x gx-mod.sh
-sudo ./gx-mod.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/Dnt3e/Gx-Mod/main/Gx-Mod.sh)
 ```
+
+<div dir="rtl">
 
 ---
 
 ### 🎯 حالت‌های بهینه‌سازی
 
-| حالت | مناسب برای | توضیح |
-|------|-----------|-------|
-| **Auto-Detect** | همه سرورها | RTT رو اندازه می‌گیره و بهترین پروفایل رو انتخاب می‌کنه |
-| **Balanced** | VPS معمولی | تنظیمات ایمن و متعادل، مناسب اکثر سرورها |
-| **Iran High RTT** | سرورهای ایران | بهینه برای مسیرهای ناپایدار و تاخیر بالای ۵۰ms |
-| **Ultra FPS** | ددیکیت قوی | کمترین تاخیر ممکن برای بازی‌های رقابتی |
+| توضیح | مناسب برای | حالت |
+|-------|-----------|------|
+| RTT رو اندازه می‌گیره و بهترین پروفایل رو انتخاب می‌کنه | همه سرورها | **Auto-Detect** |
+| تنظیمات ایمن و متعادل، مناسب اکثر سرورها | VPS معمولی | **Balanced** |
+| بهینه برای مسیرهای ناپایدار و تاخیر بالای ۵۰ms | سرورهای ایران | **Iran High RTT** |
+| کمترین تاخیر ممکن برای بازی‌های رقابتی | ددیکیت قوی | **Ultra FPS** |
 
 ---
 
 ### 📊 خروجی بنچمارک
+
+</div>
 
 ```
 Metric               Before       After        Difference
@@ -77,6 +85,8 @@ Jitter (ms)          2.75         0.36         2.39ms
 Packet Loss (%)      0            0            0.0%
 Retransmits          0            0            0
 ```
+
+<div dir="rtl">
 
 ---
 
@@ -93,9 +103,9 @@ Retransmits          0            0            0
 
 ### 📋 پیش‌نیازها
 
-- Ubuntu 22.04
+- اوبونتو نسخه ۲۲ به بالا
 - دسترسی root
-- اتصال اینترنت (برای نصب dependencies)
+- اتصال اینترنت (برای نصب وابستگی‌ها)
 
 ---
 
@@ -103,13 +113,15 @@ Retransmits          0            0            0
 
 Gx-Mod **هیچ تنظیم ناامنی** اعمال نمی‌کنه. تمام مقادیر در محدوده استاندارد لینوکس هستن. اگه سخت‌افزار ضعیف باشه، به حالت Balanced برمی‌گرده. بنچمارک‌ها واقعی هستن — اگه بهبودی نباشه، صادقانه گزارش می‌ده.
 
+</div>
+
 ---
 
 ## 🇬🇧 English
 
 ### What is Gx-Mod?
 
-Gx-Mod is an adaptive gaming server optimization framework for Ubuntu 22.04. It intelligently tunes your server's network stack, CPU, memory, and disk scheduler — whether you're running a budget 1GB VPS or a high-end dedicated server.
+Gx-Mod is an adaptive gaming server optimization framework for Ubuntu 22+. It intelligently tunes your server's network stack, CPU, memory, and disk scheduler — whether you're running a budget 1GB VPS or a high-end dedicated server.
 
 The goal is simple: **lower latency**, **less jitter**, **stable bandwidth**. No snake oil, no unsafe tweaks.
 
@@ -130,9 +142,7 @@ The goal is simple: **lower latency**, **less jitter**, **stable bandwidth**. No
 ### 🚀 Quick Install
 
 ```bash
-wget -O gx-mod.sh https://raw.githubusercontent.com/D3nte/gx-mod/main/gx-mod.sh
-chmod +x gx-mod.sh
-sudo ./gx-mod.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/Dnt3e/Gx-Mod/main/Gx-Mod.sh)
 ```
 
 ---
@@ -173,7 +183,7 @@ Retransmits          0            0            0
 
 ### 📋 Requirements
 
-- Ubuntu 22.04
+- Ubuntu 22+
 - Root access
 - Internet connection (for dependency installation)
 
@@ -199,6 +209,6 @@ Gx-Mod applies **no unsafe values**. All parameters stay within standard Linux r
 
 <div align="center">
 
-Made with ❤️ by **D3nte**
+Made with ❤️ by **[D3nte](https://github.com/Dnt3e)**
 
 </div>
